@@ -1,5 +1,5 @@
 """
-URL configuration for task_management project.
+URL configuration for task_mangement project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.2/topics/http/urls/
@@ -14,7 +14,6 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-
 from django.contrib import admin
 from django.urls import path ,include
 from tasks.views import home ,contact
@@ -25,4 +24,5 @@ urlpatterns = [
     path('',home),
     path('contact/',contact),
     path('tasks/',include('tasks.urls'))
+    
 ]
